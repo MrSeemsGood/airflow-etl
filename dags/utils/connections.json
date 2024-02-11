@@ -1,0 +1,29 @@
+{
+    "AIRFLOW_CONN_POSTGRES_INIT": {
+        "conn_type": "postgres",
+        "host": "postgres",
+        "login": "airflow",
+        "password": "airflow",
+        "schema": null,
+        "port": 5432,
+        "extra": null
+      },
+      "AIRFLOW_CONN_POSTGRES_DATA": {
+        "conn_type": "postgres",
+        "host": "postgres",
+        "login": "airflow",
+        "password": "airflow",
+        "schema": "data",
+        "port": 5432,
+        "extra": null
+      },
+      "AIRFLOW_CONN_POSTGRES_META": {
+        "conn_type": "postgres",
+        "host": "postgres",
+        "login": "airflow",
+        "password": "airflow",
+        "schema": "etl",
+        "port": 5432,
+        "extra": null
+      }
+}
