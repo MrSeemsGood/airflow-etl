@@ -26,21 +26,20 @@ files
 
 # Installation and Deployment
 1. `git clone` or download the repository;
-2. Manually **create `logs` and `plugins` directories**;
-3. Launch Docker, navigate to the project directory with command line and run:
+2. Launch Docker, navigate to the project directory with command line and run:
    
    ```
    docker compose up airflow-init
    docker-compose up
    ```
 
-4. Go to http://localhost:8080/home, which is now the Airflow webserver's page;
-5. Access remote filesystem of Airflow by clicking *Open in terminal* on any of the currently running Airflow containers (such as `airflow-etl-airflow-worker` or `airflow-etl-airflow-webserver`) in Docker UI;
-6. Run:
+3. Go to http://localhost:8080/home, which is now the Airflow webserver's page;
+4. Access remote filesystem of Airflow by clicking *Open in terminal* on any of the currently running Airflow containers (such as `airflow-etl-airflow-worker` or `airflow-etl-airflow-webserver`) in Docker UI;
+5. Run:
 
    `airflow connections import dags/utils/connections.json`
    
    To import all the necessary PostgreSQL connections (you may also add all connections manually: see 7);
-7. On the webserver, go to *Admin -> Connections* and make sure all three connections were added;
-8. Make sure all four DAGs were loaded on the main page;
-9. Enjoy!
+6. On the webserver, go to *Admin -> Connections* and make sure all three connections were added;
+7. Make sure all four DAGs were loaded on the main page;
+8. Enjoy!
